@@ -4,9 +4,7 @@ export default function App() {
   return (
     <View
       style={{
-        backgroundColor: "#fff",
         flex: 1,
-        flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -16,25 +14,13 @@ export default function App() {
           backgroundColor: "dodgerblue",
           width: 100,
           height: 100,
+          borderWidth: 10,
+          borderColor: "royalblue",
+          borderRadius: 50,
+          // borderTopWidth: 20,
+          // borderTopLeftRadius: 50,
         }}
-      />
-      <View
-        style={{
-          backgroundColor: "gold",
-          width: 100,
-          height: 100,
-          top: 80,
-          position: "absolute", // will move based on its parent,
-          // by default all react native components come with position set to relative
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "tomato",
-          width: 100,
-          height: 100,
-        }}
-      />
+      ></View>
     </View>
   );
 }
