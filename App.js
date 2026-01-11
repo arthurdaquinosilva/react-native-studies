@@ -7,19 +7,14 @@ export default function App() {
         backgroundColor: "#fff",
         flex: 1,
         flexDirection: "row",
+        alignItems: "center",
         justifyContent: "center",
-        alignContent: "center", // only works if 'flexWrap is set to wrap
-        flexWrap: "wrap",
       }}
     >
       <View
         style={{
           backgroundColor: "dodgerblue",
-          // flexBasis: 100, // can map to width or height
-          // flexGrow: 1, // is the same as flex: 1
-          // width: 100,
-          width: 400,
-          flex: -1,
+          width: 100,
           height: 100,
         }}
       />
@@ -28,6 +23,9 @@ export default function App() {
           backgroundColor: "gold",
           width: 100,
           height: 100,
+          top: 80,
+          position: "absolute", // will move based on its parent,
+          // by default all react native components come with position set to relative
         }}
       />
       <View
