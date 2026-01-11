@@ -13,14 +13,28 @@ export default function App() {
         style={{
           backgroundColor: "dodgerblue",
           width: 100,
-          height: 100,
-          shadowColor: "grey",
-          shadowOffset: { width: 10, height: 10 },
-          shadowOpacity: 1,
-          shadowRadius: 7,
-          elevation: 20, // only for android
+          height: 300,
+          padding: 20,
+          // paddingHorizontal: 10,
+          // paddingLeft: 30,
         }}
-      ></View>
+      >
+        <View
+          style={{
+            backgroundColor: "gold",
+            width: 50,
+            height: 50,
+          }}
+        ></View>
+        <View
+          style={{
+            backgroundColor: "tomato",
+            width: 50,
+            height: 50,
+            marginTop: 20,
+          }}
+        ></View>
+      </View>
     </View>
   );
 }
