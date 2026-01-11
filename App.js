@@ -14,11 +14,11 @@ export default function App() {
           backgroundColor: "dodgerblue",
           width: 100,
           height: 100,
-          borderWidth: 10,
-          borderColor: "royalblue",
-          borderRadius: 50,
-          // borderTopWidth: 20,
-          // borderTopLeftRadius: 50,
+          shadowColor: "grey",
+          shadowOffset: { width: 10, height: 10 },
+          shadowOpacity: 1,
+          shadowRadius: 7,
+          elevation: 20, // only for android
         }}
       ></View>
     </View>
