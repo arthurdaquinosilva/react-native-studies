@@ -1,4 +1,6 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
+
+import CustomText from "./app/components/CustomText";
 
 export default function App() {
   return (
@@ -9,22 +11,7 @@ export default function App() {
         justifyContent: "center",
       }}
     >
-      <Text
-        style={{
-          fontSize: 30,
-          fontStyle: "italic",
-          fontWeight: "600",
-          color: "tomato",
-          textTransform: "capitalize",
-          textDecorationLine: "underline",
-          textAlign: "center",
-          lineHeight: 40,
-        }}
-      >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-        quod id aliquam possimus mollitia! Dicta optio at unde asperiores sit
-        error commodi aliquid.
-      </Text>
+      <CustomText>Lorem ipsum dolor sit amet</CustomText>
     </View>
   );
 }
