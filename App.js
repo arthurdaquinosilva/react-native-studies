@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function App() {
   return (
@@ -9,32 +9,22 @@ export default function App() {
         justifyContent: "center",
       }}
     >
-      <View
+      <Text
         style={{
-          backgroundColor: "dodgerblue",
-          width: 100,
-          height: 300,
-          padding: 20,
-          // paddingHorizontal: 10,
-          // paddingLeft: 30,
+          fontSize: 30,
+          fontStyle: "italic",
+          fontWeight: "600",
+          color: "tomato",
+          textTransform: "capitalize",
+          textDecorationLine: "underline",
+          textAlign: "center",
+          lineHeight: 40,
         }}
       >
-        <View
-          style={{
-            backgroundColor: "gold",
-            width: 50,
-            height: 50,
-          }}
-        ></View>
-        <View
-          style={{
-            backgroundColor: "tomato",
-            width: 50,
-            height: 50,
-            marginTop: 20,
-          }}
-        ></View>
-      </View>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+        quod id aliquam possimus mollitia! Dicta optio at unde asperiores sit
+        error commodi aliquid.
+      </Text>
     </View>
   );
 }
