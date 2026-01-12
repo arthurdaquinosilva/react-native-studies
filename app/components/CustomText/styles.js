@@ -1,10 +1,6 @@
-import { Platform, StyleSheet, Text } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
-function CustomText({ children }) {
-  return <Text style={styles.text}>{children}</Text>;
-}
-
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   text: {
     color: "tomato",
     ...Platform.select({
@@ -19,5 +15,3 @@ const styles = StyleSheet.create({
     }),
   },
 });
-
-export default CustomText;
